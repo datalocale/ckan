@@ -867,6 +867,9 @@ def dict_list_reduce(list_, key, unique=True):
     ''' Take a list of dicts and create a new one containing just the
     values for the key with unique values if requested. '''
     new_list = []
+    if isinstance(list_, dict):
+        # See https://github.com/ckan/ckan/pull/2684/files#r42216290
+        list_ = list_.values()
     for item in list_:
         value = item.get(key)
         if not value or (unique and value in new_list):
