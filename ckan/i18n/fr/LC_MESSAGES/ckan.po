@@ -2867,7 +2867,7 @@ msgstr "Par exemple environnement"
 
 #: ckan/templates/home/snippets/search.html:6
 msgid "Search data"
-msgstr "Données de recherche"
+msgstr "Rechercher dans les données"
 
 #: ckan/templates/home/snippets/search.html:16
 msgid "Popular tags"
